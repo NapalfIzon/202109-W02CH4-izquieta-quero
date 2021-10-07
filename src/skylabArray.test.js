@@ -10,6 +10,26 @@ describe("Testeo de la propiedad lenght de la clase SkylabArray", () => {
 
     expect(result).toBe(expected);
   });
+
+  test("Cuando le pasamos [0,3,'hola'], deberia devolver 3", () => {
+    const valor = [0, 3, "hola"];
+    const expected = 3;
+
+    const testLength = new SkylabArray(valor);
+    const result = testLength.length;
+
+    expect(result).toBe(expected);
+  });
+
+  test("Cuando le pasamos [''], deberia devolver 0", () => {
+    const valor = [""];
+    const expected = 0;
+
+    const testLength = new SkylabArray(valor);
+    const result = testLength.length;
+
+    expect(result).toBe(expected);
+  });
 });
 
 describe("Testeo de la propiedad push de la clase SkylabArray", () => {
