@@ -1,7 +1,7 @@
 {
   "name": "challenge4",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Array methods",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll --collect-coverage"
@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "eslint-config-prettier": "^8.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NapalfIzon/202109-W02CH4-izquieta-quero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NapalfIzon/202109-W02CH4-izquieta-quero/issues"
+  },
+  "homepage": "https://github.com/NapalfIzon/202109-W02CH4-izquieta-quero#readme"
 }
