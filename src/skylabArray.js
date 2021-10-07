@@ -22,8 +22,15 @@ class SkylabArray {
     return arrayPush;
   }
 
-  some(valor) {
-    //
+  some(expresion) {
+    let respuesta = false;
+    for (const elemento of this.array1) {
+      if (Object.is(true, expresion(elemento))) {
+        respuesta = true;
+      }
+    }
+
+    return respuesta;
   }
 
   find(valor) {
@@ -42,21 +49,3 @@ class SkylabArray {
 module.exports = {
   SkylabArray,
 };
-
-debugger;
-const array1 = function ejecutable() {
-  return 2 + 2;
-}; // devuelve 4
-const arrayComparar = [1, 2, 3, 4];
-
-function prueba(expresion) {
-  let respuesta = false;
-  for (const elemento of arrayComparar) {
-    if (Object.is(true, expresion(elemento))) {
-      respuesta = true;
-    }
-  }
-  return respuesta;
-}
-
-console.log(prueba((element) => element === 3));
