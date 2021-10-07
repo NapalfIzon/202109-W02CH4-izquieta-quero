@@ -1,14 +1,13 @@
-const { push, some, find, filter, map } = require("./skylabArray");
+const { SkylabArray } = require("./skylabArray");
 
-describe("Evaluación metodos de clase SkylabArray", () => {
-  describe("Testeo del metodo push", () => {
-    test("Cuando le pasamos 0, deberia devolver [0]", () => {
-      const valor = 0;
-      const expected = [0];
+describe("Testeo de la propiedad lenght de la clase SkylabArray", () => {
+  test("Cuando le pasamos [0], deberia devolver 1", () => {
+    const valor = [0];
+    const expected = 1;
 
-      const result = push(valor);
+    const testLength = new SkylabArray(valor);
+    const result = testLength.length();
 
-      expected(result).toEqual(expected);
-    });
+    expect(result).toBe(expected);
   });
 });
