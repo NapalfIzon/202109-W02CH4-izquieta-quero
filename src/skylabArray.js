@@ -22,6 +22,7 @@ class SkylabArray {
     return arrayPush;
   }
 
+
   some(expresion) {
     let respuesta = false;
     for (const elemento of this.array1) {
@@ -33,8 +34,15 @@ class SkylabArray {
     return respuesta;
   }
 
-  find(valor) {
-    //
+
+  find(expresion) {
+    const arrayFind = this.array1;
+    for (const i in arrayFind) {
+      if (expresion(arrayFind[i])) {
+        return arrayFind[i];
+      }
+    }
+    return null;
   }
 
   filter(valor) {

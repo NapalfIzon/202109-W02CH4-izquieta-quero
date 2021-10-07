@@ -57,6 +57,7 @@ describe("Testeo del metodo push de la clase SkylabArray", () => {
   });
 });
 
+
 describe("Testeo de la propiedad find de la clase SkylabArray", () => {
   test("Cuando con un array [4, 8, 15, 16, 23, 42]le pasamos la expresión 'element => element === 23', deberia devolver 23", () => {
     const valor = (element) => element === 23;
