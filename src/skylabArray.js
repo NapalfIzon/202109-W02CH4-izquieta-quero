@@ -22,12 +22,16 @@ class SkylabArray {
     return arrayPush;
   }
 
-  some(valor) {
-    //
-  }
+  some(valor) {}
 
-  find(valor) {
-    //
+  find(expresion) {
+    const arrayFind = this.array1;
+    for (const i in arrayFind) {
+      if (expresion(arrayFind[i])) {
+        return arrayFind[i];
+      }
+    }
+    return null;
   }
 
   filter(valor) {
