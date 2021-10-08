@@ -22,7 +22,18 @@ class SkylabArray {
     return arrayPush;
   }
 
-  some(valor) {}
+
+  some(expresion) {
+    let respuesta = false;
+    for (const elemento of this.array1) {
+      if (Object.is(true, expresion(elemento))) {
+        respuesta = true;
+      }
+    }
+
+    return respuesta;
+  }
+
 
   find(expresion) {
     const arrayFind = this.array1;
